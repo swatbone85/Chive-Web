@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ChiveButton from "./ChiveButton/ChiveButton";
 import useApi from "./useApi";
 
 function AddPiece() {
@@ -63,9 +64,10 @@ function AddPiece() {
             ))}
           </select>
         )}
-        <input type="submit" value="Submit" />
         <input type="file" name="file" onChange={handleFileChange} />
       </form>
+      
+      <ChiveButton title={'Submit'} onClick={handleSubmit}/>
     </div>
   );
 }
