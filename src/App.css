@@ -1,13 +1,13 @@
 .App {
   color: #2c2c2c;
-  background-color: #f3f3f3;
+  background-color: var(--color-grey);
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
 .App-header {
-  background-color: #f3f3f3;
+  background-color: var(--color-grey);
   min-height: 100vh;
   display: flex;
   align-items: flex-start;

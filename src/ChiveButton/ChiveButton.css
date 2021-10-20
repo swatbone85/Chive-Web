@@ -1,12 +1,11 @@
 button {
-  background-color: #0ab602;
-  padding-top: 8pt;
-  padding-bottom: 8pt;
-  padding-left: 16pt;
-  padding-right: 16pt;
+  background-color: var(--color-primary);
+  padding-block: 8px;
+  padding-inline: 16px;
   color: #fff;
   border-radius: 500px;
-  font-size: 16pt;
+  border-width: 0px;
+  font-size: 2rem;
   font-weight: bold;
-  cursor: "pointer";
+  cursor: pointer;
 }

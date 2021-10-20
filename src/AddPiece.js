@@ -1,6 +1,8 @@
 import { useState } from "react";
 import ChiveButton from "./ChiveButton/ChiveButton";
 import useApi from "./useApi";
+import './AddPiece.css'
+import Divider from "./Divider";
 
 function AddPiece() {
   const [title, setTitle] = useState("");
@@ -44,17 +46,16 @@ function AddPiece() {
   return (
     <div>
       <h1>Add piece</h1>
-
-      <form onSubmit={handleSubmit}>
-        <label>
-          Title:
+        <div>
+        <span>
+          <p>Title</p>
           <input
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
-        </label>
-        {!!composers && (
+          <p>Composer</p>
+          {!!composers && (
           <select onChange={handleComposerChange}>
             <option value={null}>None</option>
             {composers.map((composer, key) => (
@@ -64,9 +65,12 @@ function AddPiece() {
             ))}
           </select>
         )}
+        </span>
+        </div>
+
+        <Divider />
+        
         <input type="file" name="file" onChange={handleFileChange} />
-      </form>
-      
       <ChiveButton title={'Submit'} onClick={handleSubmit}/>
     </div>
   );

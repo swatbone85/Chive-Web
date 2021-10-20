@@ -1,0 +1,20 @@
+div {
+  background-color: var(--color-grey);
+}
+
+input {
+  border-width: 0pt;
+  height: 16pt;
+  width: 123pt;
+}
+
+select {
+  background-color: #fff;
+  border-width: 0pt;
+  height: 16pt;
+  width: 123pt;
+}
+
+p {
+  font-weight: bold;
+}

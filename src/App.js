@@ -12,9 +12,9 @@ function App() {
     <Router>
       <div className="App-header">
         <div className="App">
-          <aside>
+          <nav>
             <Sidebar />
-          </aside>
+          </nav>
           <main>
           <Switch>
               <Route path='/' exact component={HomePage} />
