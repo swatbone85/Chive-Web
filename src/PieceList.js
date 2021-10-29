@@ -50,7 +50,7 @@ const PieceList = () => {
         },
         {
             Header: 'Composer',
-            accessor: 'composer'
+            accessor: 'composer.last_name'
         },
         {
             Header: 'Arranger',
