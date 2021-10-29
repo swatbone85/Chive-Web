@@ -54,7 +54,7 @@ const PieceList = () => {
         },
         {
             Header: 'Arranger',
-            accessor: 'arranger'
+            accessor: 'arranger.last_name'
         }
     ]
 
